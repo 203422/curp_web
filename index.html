@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Web CURP</title>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="form_container">
+            <div class="container_header">
+                <h2>Tu información personal</h2>
+                <p>Ingresa tu información personal para buscar la CURP</p>
+                <p class="message"></p>
+            </div>
+            <form class="form">
+
+
+                <div class="input_container">
+                    <label for="" class="label">Primer apellido</label>
+                    <input class="input_text input_primer_apellido" type="text"
+                        placeholder="Ingresa tu primer apellido">
+                </div>
+
+                <div class="input_container">
+                    <label for="" class="label">Segundo apellido</label>
+                    <input class="input_text input_segundo_apellido" type="text"
+                        placeholder="Ingresa tu segundo apellido">
+                </div>
+
+                <div class="input_container name_container">
+                    <label for="" class="label">Nombre(s)</label>
+                    <input class="input_text nombre_input" type="text" placeholder="Ingresa tu nombre">
+                </div>
+
+                <div class="input_container">
+                    <label for="" class="label">Fecha de nacimiento</label>
+                    <input class="input_date" type="date" id="fechaNacimiento" name="fechaNacimiento">
+                </div>
+
+                <div class="input_container input_container_radio">
+                    <label for="">Sexo</label>
+
+
+                    <div class="container_radios">
+                        <div class="container_radio">
+                            <input class="radio" type="radio" id="opcion1" name="gender" value="H">
+                            <label for="opcion1">Hombre</label><br>
+
+                        </div>
+
+                        <div class="container_radio">
+                            <input class="radio" type="radio" id="opcion2" name="gender" value="M">
+                            <label for="opcion2">Mujer</label><br>
+
+
+                        </div>
+
+                        <div class="container_radio">
+                            <input class="radio" type="radio" id="opcion3" name="gender" value="X">
+                            <label class="radio" for="opcion3">No binario</label><br>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="input_container input_container_state">
+                    <label for="" class="label">Entidad federativa de nacimiento</label>
+                    <input class="input_text" type="text" placeholder="Chiapas" disabled>
+
+                </div>
+
+
+                <div class="input_container container_code">
+                    <label for="" class="label">Código de verificación</label>
+                    <input class="input_text input_captcha" type="text"
+                        placeholder="Ingresa el código de verificación">
+
+                </div>
+
+                <div class="captcha_container">
+                    <p class="captcha_code"></p>
+                </div>
+
+                <button class="button search_button">Buscar</button>
+                <button class="button clean_button">Limpiar campos</button>
+
+            </form>
+        </div>
+
+
+
+    </main>
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
